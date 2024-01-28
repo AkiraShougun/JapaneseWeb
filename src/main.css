@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body{
-    @apply w-full
+    @apply w-full bg-slate-100
+}
+
+@layer components{
+    .book {
+        @apply relative min-h-40 max-w-28 ml-5 mb-5
+    }
 }

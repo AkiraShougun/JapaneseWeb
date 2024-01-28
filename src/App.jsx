@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './main.css'
 import Navbar from './Components/navbar'
+import Banner from './Components/banner'
+import Section from './Components/section'
+import Img1 from "./assets/img1.jpg"
+import Img2 from "./assets/img2.jpg"
 
 
 function App() {
@@ -9,7 +13,8 @@ function App() {
   return (
     <>
     <Navbar/>
-    <h1>Hello welcome to my channel. I will be teaching you how to make a website using brainf*ck</h1>
+    <Banner/>
+    <Section header="Fantasy" img1={Img1} img2={Img2}/>
     </>
   )
 }
